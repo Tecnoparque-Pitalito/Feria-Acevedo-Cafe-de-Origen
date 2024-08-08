@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ES-es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Feria de la Innovación Cafetera</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/LOGO.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@200;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<style>
+    .nav-item {
+        color: rgb(4, 75, 53) !important;
+    }
+
+    .text-green {
+        color: #1e672f;
+    }
+
+    .text-green:hover {
+        color: #469e5b;
+    }
+
+    .btn-green {
+        background-color: #1e672f;
+    }
+
+    .btn-green:hover {
+        background-color: #469e5b;
+    }
+
+    .btn-light:hover {
+        background-color: #469e5b;
+        color: #fff;
+    }
+
+    /* image */
+
+    .wall_img_1 {
+        width: 100%;
+        height: 600px;
+        margin: 40px auto;
+        transition: all .2s ease-in-out;
+    }
+
+    .wall_img_2 {
+        width: 100%;
+        height: 400px;
+        margin: 20px auto;
+        transition: all .2s ease-in-out;
+    }
+
+    .wall_img_1:hover,
+    .wall_img_2:hover {
+        filter: grayscale(80%)
+    }
+
+    .wall_img_1:before,
+    .wall_img_2:before {
+        content: attr(id);
+        opacity: 0;
+        transition: all .2s ease-in-out;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        display: block;
+        font-size: 22px;
+        font-weight: 500;
+        padding: 5px;
+        color: #fff;
+        background-color: #0000007c;
+        /* mix-blend-mode: overlay; */
+    }
+
+    .wall_img_1:hover::before,
+    .wall_img_2:hover::before {
+        content: attr(id);
+        opacity: 1;
+    }
+</style>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Cargando...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <a href="index.html" class="navbar-brand">
+                    <!-- <h2 class="text-white">Cáfe de Origen</h2> -->
+                    <img src="img/LOGO.png" alt="Logo" width="85" height="50" class="d-inline-block align-text-top">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="#inicio" class="nav-item nav-link activeTecno">Inicio</a>
+                        <a href="#redTecnoparque" class="nav-item nav-link">Red Tecnoparque</a>
+                        <a href="#feria" class="nav-item nav-link">Feria</a>
+                        <a href="#lineas" class="nav-item nav-link">Lineas</a>
+                        <a href="#actividades" class="nav-item nav-link">Actividades</a>
+                        <a href="#nosotros" class="nav-item nav-link">Sobre Nosotros</a>
+                        <a href="#contacto" class="nav-item nav-link">Contacto</a>
+                    </div>
+                    <!-- <a href="" class="btn btn-dark py-2 px-4 d-none d-lg-inline-block">Shop Now</a> -->
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary hero-header-2 mb-5" id="inicio">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <!-- <h3 class="fw-bold text-white animated slideInRight" style="font-size: 25px;">TECNOPARQUE</h3>
+                    <h3 class="fw-bold text-white animated slideInRight" style="font-size: 20px;">NODO PITALITO</h3> -->
+                    <span class="display-3 slideInRight fw-bold text-success">Feria de la</span>
+                    <h1 class="display-4 text-white animated slideInRight">
+                        Innovación Cafetera 2024
+                    </h1>
+                    <p class="text-white mb-4 animated slideInRight" style="font-size: 20px;">
+                        En el marco de la Feria del Cafe de Origen, se desarrollará la Feria de la Innovación 2024 con
+                        el fin de materializar ideas.
+                    </p>
+                    <!-- <a href="" class="btn btn-dark py-2 px-4 me-3 animated slideInRight">Explorar</a> -->
+                    <a href="https://redtecnoparque.com/pitalito/"
+                        class="btn btn-green text-white py-2 px-4 animated slideInRight mx-3">Saber más</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeU-S1CcbUdhyjpvFd_kfh4j6rgJz3QWn3PvI02z_WheePDIA/viewform"
+                        target="_blank" class="btn btn-light text-green py-2 px-4 animated slideInRight">
+                        Registrarse
+                        <i class="fa fa-pencil-alt"></i>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid animated pulse infinite" src="img/LOGO FERIA TECNOPARQUE.png" width="400px"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="redTecnoparque">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid animated pulse infinite rounded-3" src="img/tecnoparque-image.jpg">
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="text-primary mb-4">
+                        Red Tecnoparque
+                        <br>
+                        <span class="fw-light text-dark">
+                            Nodo Pitalito
+                        </span>
+                    </h1>
+                    <p class="mb-4">Es un programa de innovación tecnológica del <span class="fw-bold">Servicio Nacional
+                            de Aprendizaje</span>
+                        dirigida a todos los Colombianos, que actúa como acelerador para el desarrollo de proyectos de
+                        I+D+i materializados en prototipos funcionales en tres líneas tecnológicas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Feature Start -->
+    <div class="container-fluid py-5" id="lineas">
+        <div class="container">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="text-primary mb-3"><span class="fw-light text-dark">Líneas técnologicas</span>
+                    Tecnoparque
+                </h1>
+                <p class="mb-5">La Red Tecnoparque Colombia actúa como acelerador para el desarrollo de proyectos de
+                    I+D+i materializados en prototipos funcionales en tres líneas tecnológicas, desde las que
+                    promueven el emprendimiento de base tecnológica:</p>
+            </div>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="row g-5">
+                        <div class="col-12 d-flex">
+                            <div class="btn-square rounded-circle border flex-shrink-0"
+                                style="width: 80px; height: 80px;">
+                                <i class="fa fa-check fa-2x text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h5>Biotecnología & Nanotecnología</h5>
+                                <hr class="w-25 bg-primary my-2">
+                                <span>
+                                    <ul>
+                                        <li>
+                                            Agroindustria alimentaria
+                                        </li>
+                                        <li>
+                                            Agroindustria no alimentaria
+                                        </li>
+                                        <li>
+                                            Bioinformática
+                                        </li>
+                                        <li>
+                                            Biotecnología Vegetal
+                                        </li>
+                                        <li>
+                                            Biotecnología Industrial
+                                        </li>
+                                        <li>
+                                            Medio Ambiente
+                                        </li>
+                                        <li>
+                                            Microbiologia de Alimentos
+                                        </li>
+                                        <li>
+                                            Nuevos materiales
+                                        </li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="row g-5">
+                        <div class="col-12 d-flex">
+                            <div class="btn-square rounded-circle border flex-shrink-0"
+                                style="width: 80px; height: 80px;">
+                                <i class="fa fa-check fa-2x text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h5>Electronica y Telecomunicaciones:</h5>
+                                <hr class="w-25 bg-primary my-2">
+                                <span>
+                                    <ul>
+                                        <li>
+                                            Automatización e Instrumentación
+                                        </li>
+                                        <li>
+                                            Diseño Electrónico
+                                        </li>
+                                        <li>
+                                            Internet de las Cosas IoT
+                                        </li>
+                                        <li>
+                                            Robótica
+                                        </li>
+                                        <li>
+                                            agroelectrónica
+                                        </li>
+                                        <li>
+                                            Analisis de señales y protocolos
+                                        </li>
+                                        <li>
+                                            Sistemas embebidos
+                                        </li>
+                                        <li>
+                                            Redes inteligentes
+                                        </li>
+                                        <li>Infraestructura, redes y antenas</li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="row g-5">
+                        <div class="col-12 d-flex">
+                            <div class="btn-square rounded-circle border flex-shrink-0"
+                                style="width: 80px; height: 80px;">
+                                <i class="fa fa-check fa-2x text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h5>Tecnologías Virtuales:</h5>
+                                <hr class="w-25 bg-primary my-2">
+                                <span>
+                                    <ul>
+                                        <li>
+                                            Animación Digital
+                                        </li>
+                                        <li>
+                                            Aplicaciones móviles y web
+                                        </li>
+                                        <li>
+                                            Desarrollo de contenidos multiples
+                                        </li>
+                                        <li>
+                                            Diseño y Desarrollo de Videojuegos
+                                        </li>
+                                        <li>
+                                            Ingeniería de Software
+                                        </li>
+                                        <li>
+                                            Inteligencia Artificial - Big Data
+                                        </li>
+                                        <li>
+                                            Realidad Aumentada
+                                        </li>
+                                        <li>
+                                            Realidad Virtual y Simulación
+                                        </li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- <div class="container-fluid deal-white bg-primary my-5 py-5" id="feria">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-white text-center p-4">
+                        <div class="border p-4">
+                            <p class="mb-2">En Acevedo</p>
+                            <h2 class="fw-bold text-uppercase mb-4">Tecnoparque</h2>
+                            <p class="mb-2">Agosto</p>
+                            <h1 class="display-4 text-primary mb-4">10 - 11</h1>
+                            <p class="">Materializa tu idea</p>
+                            <h5 class="mb-5">Feria de la Innovación Cafetera 2.0</h5>
+                            <p class="text-primary">
+                            <ul>
+                                <li>
+                                    Asesoría técnica personalizada para el desarrollo de proyectos en I+D+i.
+                                </li>
+                                <li>
+                                    Adaptación y transferencia de tecnología.
+                                </li>
+                                <li>
+                                    Generación y apropiación social del conocimiento.
+                                </li>
+                                <li>
+                                    Acceso a infraestructura física y tecnológica de laboratorios especializados
+                                    enmarcados en las cuatro Líneas de Desarrollo.
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid animated pulse infinite" src="img/tecnoparque-image.jpg">
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
+    <!-- How To Use Start -->
+    <!-- <div class="container-fluid how-to-use-white bg-primary my-5 py-5" id="actividades">
+        <div class="container text-dark py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="text-primary mb-3">
+                    <span class="fw-light text-dark">Actividades</span>
+                    Feria de la Innovación Cafetera 2.0
+                </h1>
+                <p class="mb-5">Demostración de proyectos <span class="fw-bolder">Tecnoparque</span></p>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn-square rounded-circle border mx-auto mb-4" style="width: 120px; height: 120px;">
+                        <img class="d-flex w-75" src="https://redtecnoparque.com/wp-content/uploads/2023/07/1-6.png">
+                    </div>
+                    <h5 class="text-primary text-center">Biotecnología & Nanotecnología</h5>
+                    <hr class="w-25 bg-light my-2 mx-auto">
+                    <span>
+                        <ul>
+                            <li class="mb-2">
+                                Demostración de <span class="fw-bold">Procesos de Fermentación</span> realizados a
+                                empresa <span class="fw-bold text-primary">MEMORY´S CAFE S.A.S</span> y otros prototipos
+                                realizados bajo el proceso de cultivos iniciadores en fermentación de café.
+                            </li>
+                            <li class="mb-2">
+                                Presentación de productos desarrollados en el área de agroindustria alimentaria.
+                            </li>
+                            <li>
+                                Presentación de <span class="fw-bold">Prototipos Desarrollados como Nuevos Materiales
+                                    Alternativos</span> en Nanotecnología.
+                            </li>
+                            <li>
+                                Presentación de <span class="fw-bold">Prototipos Desarrollados como Nuevos Materiales
+                                    Alternativos</span> obtenidos a partir de residuos en la industria de panela y
+                                guadua.
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn-square rounded-circle border mx-auto mb-4" style="width: 120px; height: 120px;">
+                        <img class="d-flex w-75" src="https://redtecnoparque.com/wp-content/uploads/2023/07/3-5.png">
+                    </div>
+                    <h5 class="text-primary text-center">Tecnologías Virtuales</h5>
+                    <hr class="w-25 bg-light my-2 mx-auto">
+                    <span>
+                        <ul>
+                            <li>
+                                Muestras de prototipos funcionales enfocados en café:
+                                <ul>
+                                    <li class="mt-2 mb-2">
+                                        <span class="fw-bold">Aplicación Móvil con Inteligencia Artificial</span> para
+                                        el reconocimiento de enfermedades y deficiencias.
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="fw-bold">Desarrollo Pagina Web</span> para mostrar el proceso que
+                                        realiza la empresa <span class="fw-bold text-primary">MEMORY´S CAFE
+                                            S.A.S</span>, en los diferentes perfiles de taza de café que generan.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn-square rounded-circle border mx-auto mb-4" style="width: 120px; height: 120px;">
+                        <img class="d-flex w-75" src="https://redtecnoparque.com/wp-content/uploads/2023/07/2-4.png">
+                    </div>
+                    <h5 class="text-primary text-center">Electronica & Telecomunicaciones</h5>
+                    <hr class="w-25 bg-light my-2 mx-auto">
+                    <span>
+                        <ul>
+                            <li>
+                                Demostración de <span class="fw-bold">Sistema Electrónico de Fermentación
+                                    Controlada</span> de café para la empresa
+                                <span class="fw-bold text-primary">MEMORY´S CAFE S.A.S</span>
+                            </li>
+                            <li>
+                                Demostración de <span class="fw-bold">Software de Fermentación
+                                    Controlada</span> para la medición de pH, Temperatura y Conductividad eléctrica.
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- How To Use End -->
+
+
+
+    <!-- feria 2023 -->
+
+    <div class="container-fluid position-relative overflow-hidden py-5" id="nosotros">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="lc-block text-center">
+                    <h1 class="text-primary mb-3"><span class="fw-light text-dark">Sobre</span> Nosotros</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row sm-m-5">
+            <div class="col-lg-6">
+                <div class="row ">
+                    <div class="col-sm-6">
+                        <div class="lc-block">
+                            <div lc-helper="background" class="wall_img_1 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('img/fotos/1\ \(10\).jpg');"
+                                id="Biotecnología">
+                            </div>
+                            <div lc-helper="background" class="wall_img_1 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('img/fotos/1\ \(19\).jpg');"
+                                id="Oficina Tecnoparque">
+                            </div>
+                            <div lc-helper="background" class="wall_img_1 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('img/FOTOS-1/foto\ \(1\).jpeg');"
+                                id="Biotecnología">
+                            </div>
+                        </div>
+                        <!-- /lc-block -->
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="lc-block ">
+                            <div lc-helper="background" class="wall_img_2 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('img/fotos/1\ \(25\).jpg');"
+                                id="Biotecnología">
+                            </div>
+                        </div>
+                        <div class="lc-block ">
+                            <div lc-helper="background" class="wall_img_2 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('img/fotos/procesamiento_de_señales.jpg');"
+                                id="Electrónica">
+                            </div>
+                        </div>
+                        <div class="lc-block ">
+                            <div lc-helper="background" class="wall_img_2 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('img/fotos/desarrollo-de-software.jpg');"
+                                id="Tecnologías Virtuales">
+                            </div>
+                        </div>
+                        <div class="lc-block ">
+                            <div lc-helper="background" class="wall_img_2 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('img/FOTOS-1/foto\ \(10\).jpeg');"
+                                id="Talentos">
+                            </div>
+                        </div>
+                        <div class="lc-block ">
+                            <div lc-helper="background" class="wall_img_2 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('img/FOTOS-1/foto\ \(11\).jpeg');"
+                                id="Talentos">
+                            </div>
+                        </div>
+                        <!-- /lc-block -->
+                    </div>
+                </div>
+                <!-- /lc-block -->
+            </div><!-- /col -->
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="lc-block">
+                            <div lc-helper="background" class="wall_img_1 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('img/fotos/1\ \(29\).jpg');"
+                                id="Nanotecnología">
+                            </div>
+                        </div>
+                        <div class="lc-block ">
+                            <div lc-helper="background" class="wall_img_1 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('img/fotos/desarrollo-software.jpg');"
+                                id="Tecnologías Virtuales">
+                            </div>
+                        </div>
+                        <div class="lc-block ">
+                            <div lc-helper="background" class="wall_img_1 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('img/FOTOS-1/foto\ \(9\).jpeg');"
+                                id="Biotecnología">
+                            </div>
+                        </div>
+                        <!-- /lc-block -->
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="lc-block ">
+                            <div lc-helper="background" class="wall_img_2 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('img/fotos/analisis_de_datos_big-data.jpg');"
+                                id="Tecnologías Virtuales">
+                            </div>
+                        </div>
+                        <div class="lc-block ">
+                            <div lc-helper="background" class="wall_img_2 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('img/fotos/1\ \(14\).jpg');"
+                                id="Biotecnología">
+                            </div>
+                        </div>
+                        <div class="lc-block ">
+                            <div lc-helper="background" class="wall_img_2 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('img/fotos/1\ \(28\).jpg');"
+                                id="Nanotecnología">
+                            </div>
+                        </div>
+                        <div class="lc-block ">
+                            <div lc-helper="background" class="wall_img_2 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('img/FOTOS-1/foto\ \(2\).JPG');"
+                                id="Tecnologías Virtuales">
+                            </div>
+                        </div>
+                        <div class="lc-block ">
+                            <div lc-helper="background" class="wall_img_2 rounded"
+                                style="background-size: cover; background-position: center; background-image: url('img/FOTOS-1/foto\ \(2\).jpeg');"
+                                id="Tecnologías Virtuales">
+                            </div>
+                        </div>
+                        <!-- /lc-block -->
+                    </div>
+                </div>
+                <!-- /lc-block -->
+            </div><!-- /col -->
+
+        </div><!-- /col -->
+
+    </div>
+
+
+    <!-- feria 2023 -->
+
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-white footer" id="contacto">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-3 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <img class="m-3" src="img/LOGO FERIA TECNOPARQUE.png" width="150" alt="">
+                        <img src="img/tecnoparque-green-gray.png" width="200" alt="">
+                    </a>
+                    <!-- <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non malesuada consequat, nibh erat tempus risus, vitae porttitor purus nisl vitae purus.</p> -->
+                </div>
+                <div class="col-md-3 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="mb-4">Lugar</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Yamboró, Pitalito, Huila, Colombia</p>
+                    <!-- <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+          <p><i class="fa fa-envelope me-3"></i>info@example.com</p> -->
+                    <!-- <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-outline-primary me-1" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div> -->
+                </div>
+
+                <div class="col-md-6 col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="embed-responsive embed-responsive-16by9 rounded-3">
+                        <iframe class="embed-responsive-item rounded-3"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9875.647641721991!2d-76.0901037545167!3d1.892000598466608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2572d5f6b3dd1f%3A0x10e75cc78a354f15!2sTecnoparque%207%20Agroecol%C3%B3gico%20Yamboro!5e1!3m2!1ses!2sco!4v1722883996747!5m2!1ses!2sco"
+                            width="345" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Cafe de Origen</a>, Todos los derechos reservados.
+                        Diseñado por <a class="border-bottom" href="https://htmlcodex.com">Tecnoparque</a> Nodo Pitalito
+                        <a href="https://themewagon.com">SENA</a>
+                    </div>
+                    <!-- <div class="col-md-6 text-center text-md-end">
+            <div class="footer-menu">
+              <a href="">Home</a>
+              <a href="">Cookies</a>
+              <a href="">Help</a>
+              <a href="">FAQs</a>
+            </div>
+          </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/tecnoparque.js"></script>
+    <script src="js/nav-tecno.js"></script>
+</body>
+
+</html>
